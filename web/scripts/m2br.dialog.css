@@ -1,0 +1,114 @@
+@charset utf-8;
+/*
+* Contribuição (Projeto m2brDialog)
+*
+** Força a exibição de 100% da div m2brOverlay no IE6 devido a bug de renderização
+*
+** html, body { height: 100%; }
+** html div#m2brOverlay { height: 100%; }
+*
+*
+* @by Rômulo Alves (romulo@logmania.net)
+* 25-11-2008 às 20:39hs
+*/
+html, body {
+	height: 100%;
+}
+* html div#m2brOverlay {
+	height: 100%;
+}
+div > div#m2brDialogJanela, div > div#m2brOverlay {
+	position:fixed;
+}
+div#m2brOverlay {
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 160;
+	position: absolute;
+	filter:alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+	background-color: #FFF;
+}
+div#m2brDialogJanela {
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	display: none;
+	z-index: 10000;
+	font: 11px Arial, Helvetica, Tahoma, sans-serif;
+	position: absolute;
+	border: 1px solid;
+	border-color:#999;
+	background-color: #E0E0E0;
+}
+div#m2brDialogJanela h2 {
+	color:#FFF;
+	height:16px;
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0;
+	font-weight:700;
+	text-align:center;
+	margin-bottom:10px;
+	background:url(../images/m2brbgtitulo.jpg) repeat-x;
+	padding:3px;
+}
+div#m2brDialogJanela h2 a#m2brDialogFechar {
+	display:block;
+	float:right;
+	width:16px;
+	height:16px;
+	background:url(../images/fileclose.png) no-repeat;
+}
+div#m2brDialogJanela-texto {
+	font-weight:700;
+	font-size:11px;
+	margin-left:54px;
+	margin-right:20px;
+	margin-top:10px;
+	text-align:left;
+}
+div#m2brDialogJanela-botoes {
+	text-align:center;
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+}
+div#m2brDialogJanela-botoes a {
+	border:1px solid #999;
+	color:#333;
+	font-weight:700;
+	margin-right:3px;
+	text-decoration:none;
+	padding:4px 10px;
+}
+div#m2brDialogJanela-botoes a:hover {
+	border:1px solid #333;
+	background-color:#C5C5C5;
+}
+div#m2brDialogJanela-botoes div.carregando {
+	background:url(../images/m2brloading3.gif) no-repeat;
+	border:none!important;
+	width:62px;
+	height:13px;
+	margin:0 auto;
+}
+div#m2brDialogJanela.m2brDialog-alerta {
+	background-color:#DADADA;
+	background:#DADADA url(../images/m2bralerta.png) no-repeat 12px 25px;
+}
+div#m2brDialogJanela.m2brDialog-erro {
+	background:#DADADA url(../images/m2brerro.png) no-repeat 12px 25px;
+}
+div#m2brDialogJanela.m2brDialog-pergunta {
+	background:#DADADA url(../images/m2brpergunta.png) no-repeat 12px 25px;
+}
+div#m2brDialogJanela.m2brDialog-info {
+	background:#DADADA url(../images/m2brinfo.png) no-repeat 12px 25px;
+}
+
+

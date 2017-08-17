@@ -1,0 +1,92 @@
+/* Configuracao da pagina de cadastros em geral*/
+#catalogoLivro {
+	font: 90%/1.3 Tahoma, Geneva, sans-serif;
+	height:auto;
+	width:740px;
+	background-color: #FFF;
+	margin-left:5px;
+}
+.faixa_amarela
+{
+	width:740px;
+	height:35px;
+	clear:both;
+	line-height:32px;
+	font-size:13pt;
+	color:#333;
+	font-family:Tahoma, Geneva, sans-serif;
+	background-color:#FDDF4E;
+	font-weight:bold;
+	letter-spacing:1px;
+	margin-top: 10px;
+	/*cursor:hand;*/
+	cursor:pointer;
+}
+#table_eventos_cadastrados
+{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11pt;
+	border:#CCC solid 1px;
+	width:740px;
+}
+.linha1
+{
+	color:#006;
+	text-align:center;
+	font-size:small;
+}
+.linha2
+{
+	background-color:#EAEAEA;
+	color:#333;
+	text-align:center;
+	font-size:small;
+}
+.linhaTotal
+{
+	background-color:#FC9;
+	color:#333;
+	text-align:center;
+	font-size:small;
+}
+.linhaContinuarComprando
+{
+	background-color:#E9E9E9;
+	color:#333;
+	text-align:center;
+	font-size:small;
+}
+thead tr
+{
+	background-color:#B6B6B6;
+	color:#333;
+}
+#catalogoLivro input.submit 
+{
+	color:#000;
+	border:none;
+	background:url(../images/Refresh-1.png) center center no-repeat;
+	cursor:pointer;
+	width:24px;
+	height:22px;
+	margin-right:10px;
+	font-size:1.2em;
+	text-align: center;
+}
+
+#catalogoLivro input.carrinhoCompras 
+{
+	color:#000;
+	border:none;
+	background:url(../images/Shopping_Cart_Add.png) center center no-repeat;
+	cursor:pointer;
+	width:42px;
+	height:42px;
+	margin-right:10px;
+	font-size:1.2em;
+	text-align: center;
+}
+#dadosEntrega #obrigatorio
+	{
+		color:#F00;
+	}

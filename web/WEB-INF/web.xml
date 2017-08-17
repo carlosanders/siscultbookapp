@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>SisCultbookController</servlet-name>
+        <servlet-class>br.com.siscultbook.controller.SisCultbookController</servlet-class>
+        <init-param>
+            <param-name>dir-imagens</param-name>
+            <!-- Ambiente CASA  -->
+            <!--<param-value>C:/Users/Carlos/Documents/NetBeansProjects/SisCultbookApp/web</param-value>-->
+            <param-value>D:/01.desenvolvimento/java/projetos_olds/SisCultbookApp/web</param-value>
+            <!-- Ambiente produção 
+            <param-value>C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SisCultbookApp</param-value>
+            -->
+        </init-param>
+        <init-param>
+            <param-name>dir-relatorios</param-name>
+            <!--  caminho casa -->
+            <param-value>D:/01.desenvolvimento/java/projetos_olds/SisCultbookApp/build/web/WEB-INF/classes/br/com/siscultbook/relatorios</param-value>
+            <!--  Ambiente de Produção 
+            <param-value>C:/Program Files/Apache Software Foundation/Tomcat 6.0/webapps/SisCultbookApp/WEB-INF/classes/br/com/siscultbook/relatorios</param-value>
+            -->
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioPedido</servlet-name>
+        <servlet-class>br.com.siscultbook.controller.RelatorioPedido</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SisCultbookController</servlet-name>
+        <url-pattern>/SisCultbookController</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>UsuarioAutorizado</filter-name>
+        <filter-class>br.com.siscultbook.controller.UsuarioAutorizadoFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UsuarioAutorizado</filter-name>
+        <url-pattern>/SisCultbookController</url-pattern>
+    </filter-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioPedido</servlet-name>
+        <url-pattern>/RelatorioPedido</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>SisCultbookController</welcome-file>
+    </welcome-file-list>
+</web-app>

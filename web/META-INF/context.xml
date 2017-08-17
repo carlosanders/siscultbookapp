@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Alterações para produção 
+<Context
+    privileged="true"
+    reloadable="true"
+    workDir="C:/Program Files/Apache Software Foundation/Tomcat 6.0/work/Catalina/localhost/SisCultbookApp"
+    path="/SisCultbookApp"
+    docBase="$CATALINA_HOME/webapps/SisCultbookApp/SisCultbookApp"
+    crossContext="true" />
+-->
+<!-- Alterações para desenvolvimento -->
+<Context antiJARLocking="true" path="/SisCultbookapp"/>

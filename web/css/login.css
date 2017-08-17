@@ -1,0 +1,127 @@
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	background-color:#e5e5e5;
+	
+	background-position:center center;
+} 
+#erro
+{
+	height:auto;
+	font-size:14px;
+	color:#FFF;
+}
+#divTitulo
+{
+	height:auto;
+	font-size:25pt;
+	color: #9a9a9a;
+	margin-top: 15px;
+}
+#login {
+	background-image: url(../images/login.jpg);
+	background-repeat: no-repeat;
+	height: 340px;
+	width: 375px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 65px;
+	margin-left: auto;
+	padding: 140px 0 0 55px;
+	text-align: left;
+	color: #FFFFFF;
+	font-size:1.4em;
+}
+#login input {
+	font-size: 1.8em;
+	width: 280px;
+	margin: 10px;
+	color:#333;
+}
+#login input.user
+{
+	background-image:url(../images/icon_user.gif);
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	BACKGROUND-POSITION: 3px 8px;
+	width:260px;
+	padding-left:20px;
+}
+#login form {
+	width: 78%;
+}
+.e2_photo_gallery {
+ width:600px;
+ margin:0px auto;
+ min-width:600px;
+ color:#000000;
+}
+
+.e2_photo_gallery .hd .c,
+.e2_photo_gallery .ft .c {
+ font-size:1px; 
+ height:13px;
+}
+
+.e2_photo_gallery .ft .c {
+ height:14px;
+}
+
+.e2_photo_gallery .hd {
+ background:transparent url(../images/tl.gif) no-repeat 0px 0px;
+}
+
+.e2_photo_gallery .hd .c {
+ background:transparent url(../images/tr.gif) no-repeat right;
+}
+
+.e2_photo_gallery .bd {
+ background:transparent url(../images/ml.gif) repeat-y 0px 0px;
+}
+
+.e2_photo_gallery .bd .c {
+ background:transparent url(../images/mr.gif) repeat-y right;
+}
+
+.e2_photo_gallery .bd .c .s {
+	margin:0px 8px 0px 4px;
+	padding:1em;
+	text-align: left;
+}
+
+.e2_photo_gallery .ft {
+ background:transparent url(../images/bl.gif) no-repeat 0px 0px;
+}
+
+.e2_photo_gallery .ft .c {
+ background:transparent url(../images/br.gif) no-repeat right;
+}
+.float50 {
+	float: left;
+	width: 48%;
+}
+.clear{clear:both}
+
+#login input.submit 
+{
+	color:#000;
+	border:none;
+	background:url(../images/botao1-cadeado.png) center center no-repeat;
+	cursor:pointer;
+	width:290px;
+	height:43px;
+	margin-right:10px;
+	font-size:1.2em;
+	text-align: center;
+}
+#login form input.radio {
+	vertical-align:middle;
+	display:inline;
+	float:none;
+	width:auto;
+	background:none;
+	border:none;
+	height:15px;
+	margin:0 0 0 0;
+}
