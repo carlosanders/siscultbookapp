@@ -42,13 +42,15 @@ Este padrão permite criar as classes de dados independentemente da fonte de dad
 - O DAO deve ser responsável pelas operações CRUD no domínio;
 - O DAO não deve ser responsável por transações, sessões ou conexões que devem ser tratados fora do DAO;
 
-![**Singleton**](wiki/img/singleton.png "Singleton")
+![****DAO** – Data Access Object**](wiki/img/dao.jpg "**DAO** – Data Access Object")
 
 * Padrão **Singleton**.
 
 Este padrão permite centralizar a responsabilidade em uma única instância de classe, provendo um ponto de acesso global a ela.
 A instância do objeto pode ser feito quando a classe for carregada ou quando o método de criação for chamado pela primeira vez.
 No sistema foi desenvolvida uma classe que faz a conexão com o banco de dados implementando somente uma instância da classe usando este padrão de projeto.
+
+![**Singleton**](wiki/img/singleton.png "Singleton")
 
 ## Tecnologias Utilizadas
 
