@@ -10,7 +10,7 @@
 <div id="topo">
     <div id="figuraTopo">
         <div id="nav-header">
-            <span>0800 979 06 06</span> |
+            <span>versão: 1.0.0</span> |
             <a href="SisCultbookController?cmd=dadosCliente&amp;codigo=${codigoUsuario}" class="pequeno">Meu Cadastro</a> |
             <a href="SisCultbookController?cmd=finalizarCompra" class="pequeno">Finalizar Compra</a>
             |
